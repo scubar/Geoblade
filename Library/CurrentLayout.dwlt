@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 124
+  controlID: 120
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 75
+  controlID: 50
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -255,8 +255,8 @@ MonoBehaviour:
     y: 0
     width: 389
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -290,7 +290,7 @@ MonoBehaviour:
     height: 650
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
-  m_Stats: 0
+  m_Stats: 1
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
@@ -366,9 +366,9 @@ MonoBehaviour:
     height: 650
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2a070000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 1afcffff000000006e2b0000
+    m_SelectedIDs: 6e2b0000
+    m_LastClickedID: 11118
+    m_ExpandedIDs: 1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -418,14 +418,14 @@ MonoBehaviour:
     width: 1148
     height: 650
   m_SceneLighting: 1
-  lastFramingTime: 1159.7481399969379
+  lastFramingTime: 1755.1934532086416
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 588.07214, y: 160.0379, z: 445.7213}
+    m_Target: {x: 347.36624, y: 47.57449, z: 723.98505}
     speed: 2
-    m_Value: {x: 588.07214, y: 160.0379, z: 445.7213}
+    m_Value: {x: 347.36624, y: 47.57449, z: 723.98505}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -448,13 +448,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.30289617, y: 0.023762146, z: -0.0075590536, w: -0.9526973}
+    m_Target: {x: 0.00008505584, y: 0.99928236, z: -0.037820313, w: 0.0021404983}
     speed: 2
-    m_Value: {x: -0.30289617, y: 0.023762146, z: -0.0075590536, w: -0.9526973}
+    m_Value: {x: 0.000085055835, y: 0.99928224, z: -0.03782031, w: 0.002140498}
   m_Size:
-    m_Target: 1274.5065
+    m_Target: 50.041447
     speed: 2
-    m_Value: 1274.5065
+    m_Value: 50.041447
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -529,18 +529,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Audio
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Audio
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Daniel\Documents\Geoblade
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 38}
-    m_SelectedIDs: 4e280000
-    m_LastClickedID: 10318
+    scrollPos: {x: 0, y: 54}
+    m_SelectedIDs: 54290000
+    m_LastClickedID: 10580
     m_ExpandedIDs: 0000000092260000f4260000a0270000b6270000b8270000e82700000e280000102800004e280000562900008629000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0

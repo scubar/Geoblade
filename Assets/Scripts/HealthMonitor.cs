@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthMonitor : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class HealthMonitor : MonoBehaviour
     public GameObject Heart2;
     public GameObject Heart3;
 
+    public GameObject HealthText;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -22,8 +25,9 @@ public class HealthMonitor : MonoBehaviour
 	void Update ()
 	{
 	    InternalHealth = HealthValue;
+	    HealthText.GetComponent<Text>().text = InternalHealth.ToString();
 
-	    switch (HealthValue)
+        switch (HealthValue)
 
 	    {
 	        case 0:

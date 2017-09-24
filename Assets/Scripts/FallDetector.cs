@@ -9,6 +9,7 @@ public class FallDetector : MonoBehaviour
     public float MinDeathHeight;
     public GameObject Player;
     public AudioSource DeathSound;
+    public AudioSource DeathSound2;
     public bool Respawning; // Tracks whether the player is currently respawning.
 
     void Update()
@@ -16,9 +17,30 @@ public class FallDetector : MonoBehaviour
         if (Player.transform.position.y < MinDeathHeight && !Respawning)
         {
             Respawning = true;
-            DeathSound.Play();
+            PlayDeathSound();
             StartCoroutine(MoveToSpawnPoint());
         }
+    }
+
+    void PlayDeathSound()
+    {
+        var rand = new System.Random();
+        int num = rand.Next(1,2);
+
+        switch (num)
+        {
+            case 1:
+            {
+                DeathSound.Play();
+                break;
+            }
+            case 2:
+            {
+                DeathSound2.Play();
+                break;
+            }
+        }
+
     }
 
     IEnumerator MoveToSpawnPoint()
