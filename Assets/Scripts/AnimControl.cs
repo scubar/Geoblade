@@ -6,24 +6,46 @@ public class AnimControl : MonoBehaviour
 {
 
     private Animator mAnimator;
-    public float movementSpeed;
+    public float MovementSpeed;
+    public float ChaseDistance;
+    public float AttackDistance;
+    public GameObject Target;
+
+    public AudioSource Sword01;
+    public AudioSource Sword02;
+
+    public AudioSource Roar01;
+
+
 
 	// Use this for initialization
 	void Start ()
 	{
 	    mAnimator = GetComponent<Animator>();
-	    mAnimator.SetBool("walking",true);
     }
 
     // Update is called once per frame
     void Update ()
 	{
-	    transform.position += transform.forward * Time.deltaTime * movementSpeed;
+	   var targetDistance = (Target.transform.position - this.transform.position).sqrMagnitude;
+	    mAnimator.SetBool("walking", false);
 
 
-        if (Input.GetKeyDown(KeyCode.M))
+        if ((targetDistance < ChaseDistance && targetDistance > AttackDistance))
 	    {
-	        mAnimator.SetTrigger("attack");
+	        transform.LookAt(Target.transform.position);
+	        Roar01.Play();
+            mAnimator.SetBool("walking", true);
+            transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, 0.1f);
+        }
+
+        if ((targetDistance <= AttackDistance))
+	    {
+	        Sword01.Play();
+	        transform.LookAt(Target.transform.position);
+	        mAnimator.SetBool("walking", false);
+            mAnimator.SetTrigger("attack");
 	    }
+
 	}
 }
